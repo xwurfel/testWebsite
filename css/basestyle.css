@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+}
+.container {
+    width: 73%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.header {
+    text-align: center;
+    background-color: #de2b24;
+    padding-bottom: 9%;
+}
+
+.title {
+    color: #ffffff;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.text {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.line {
+    height: 5px;
+    width: 3vw;
+    background: #ffffff;
+    margin: 10 auto;
+}
+
+.grid-wrapper {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+html {
+    font-size: 14px;
+}
+
+.cont {
+    width: 49%;
+    margin: 0 auto;
+}
+
+.grid-element {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 25%; */
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+
+    .cont {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .grid-element {
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* width: 50%; */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid-wrapper {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+
+    html {
+        font-size: 11px;
+    }
+
+    .cont {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .grid-element {
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* width: 50%; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-wrapper {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    .grid-element {
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+}
+
+.grid-wrapper .grid-element > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.grid-wrapper div:nth-child(1),
+.grid-wrapper div:nth-child(3),
+.grid-wrapper div:nth-child(6),
+.grid-wrapper div:nth-child(8) {
+    background: #f35e58;
+
+    color: #fff;
+}
+
+.content {
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectname {
+    margin-top: 5%;
+    font-weight: 700;
+
+    font-size: 2.2rem;
+
+    transition: 0.5s;
+    cursor: default;
+}
+
+.projectname:hover {
+    color: #000000;
+    transition: 0.5s;
+}
+
+.projecttext {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.facebookFeedback {
+    background-color: #1287bf;
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+    margin-top: 2%;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 22px;
+
+    transition: 0.5s;
+}
+
+.sign:hover {
+    border-color: #000000;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.triangle {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    transform: rotateY(0deg) rotate(45deg);
+}
+
+.textField {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.textField .text {
+    color: #8a8a8a;
+    font-size: 1.06rem;
+    padding-top: 7%;
+    margin-bottom: 5%;
+}
+
+.close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    height: 50px;
+    width: 50px;
+    background-color: #de2b24;
+    border-radius: 50px;
+    text-align: center;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 20px;
+
+    transition: 0.5s;
+}
+
+.close:hover {
+    border-color: #000000;
+    color: #000;
+    transition: 0.5s;
+}
+
+.textField input {
+    width: 64%;
+    border: solid 1px #8a8a8a;
+    border-radius: 3px;
+    margin-top: 1%;
+    padding: 2.5% 4%;
+    color: #8a8a8a;
+    font-size: 1.07em;
+    transition: 0.5s;
+}
+
+.textField input:hover {
+    border-color: #1287bf;
+    transition: 0.5s;
+}
+
+.submit {
+    color: #fff;
+    background-color: #de2b24;
+    border: solid 2px #de2b24;
+    border-radius: 3px;
+    margin-top: 6%;
+    padding: 2% 4%;
+    margin-bottom: 9%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: 0.5s;
+
+    cursor: pointer;
+}
+
+.submit:hover {
+    border-color: #000000;
+    transition: 0.5s;
+}
+
+.getInTouch {
+    width: 100%;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+
+.getInTouch .title {
+    font-size: 2.1rem;
+}
+
+.getInTouch .grid-wrapper {
+    display: flex !important;
+    grid-gap: 1em;
+    margin-top: 3%;
+    flex-wrap: initial;
+
+    justify-content: center;
+}
+
+.getInTouch .grid-wrapper div {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px; */
+
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: solid 2px #515151;
+
+    border-radius: 2px;
+
+    background-color: #2a2a2a;
+
+    transition: 0.5s;
+}
+
+.getInTouch .grid-wrapper div:hover {
+    border-color: #de2b24;
+    transform: scale(1.13);
+}
+
+.getInTouch .text {
+    font-size: 1.07rem;
+    color: #cecece;
+    margin: 4% 0;
+}
+
+.getInTouch input {
+    width: 100%;
+    background-color: #515151;
+    color: #cecece;
+
+    border: solid 0px;
+    padding: 2.5%;
+    margin-top: 0.7%;
+}
+
+.getInTouch button {
+    color: #ffffff;
+    background-color: #2a2a2a;
+
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    margin-top: 2.5%;
+    padding: 2% 4.5%;
+    margin-bottom: 12%;
+
+    border: solid 2px #515151;
+    border-radius: 2px;
+
+    transition: 0.5s;
+}
+
+.getInTouch button:hover {
+    border-color: #de2b24;
+    transition: 0.5s;
+}
+
+.footer {
+    background-color: #515151;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 25px;
+    color: #cecece;
+}
